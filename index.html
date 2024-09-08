@@ -11,24 +11,30 @@
 <link rel="canonical" href="https://nathancopley.uk/">
 <link rel="icon" type="image/x-icon" href="https://raw.githubusercontent.com/NathanCopley/nathancopley.github.io/gh-pages/favicon.png">
 <title>Nathan Copley</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap" rel="stylesheet">
 
 <style>
 
-html {filter:grayscale(1) contrast(1.2);background:black;box-sizing: border-box;  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;text-align: center;}
+html {filter:grayscale(1) contrast(1.2);background:black;box-sizing: border-box;    font-family: "Space Grotesk", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;text-align: center;}
 
-*, *:before, *:after {box-sizing: inherit;}
+*, *:before, *:after {box-sizing: inherit;transition:0.2s;  font-family: "Space Grotesk", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;}
 
-h1 {color:white;font-size: clamp(28px, calc(2.5rem + 0.45vw), 52px);margin:0.5em 0 1em 0;text-shadow: 0px 0px 70px hsl(0deg 0% 100% / 30%);}
+h1 {color:white;font-size: clamp(22px, calc(2.5rem + 2vw), 72px);margin:1.2vw;text-shadow: 0px 0px 70px hsl(0deg 0% 100% / 30%);}
 
-section {height: 100%; width: 100%;}
-
-  div {margin:1vh;padding:1vh; opacity:1;}
+section {height: 100%; width: 100%;padding:2vh;}
 
 
-p {color:#cccccc;font-size: clamp(18px, calc(1.2rem + 0.45vw), 24px);max-width:840px;margin:0 auto;text-wrap:balance}
+p {color:#cccccc;font-size: clamp(18px, calc(1.25rem + 0.45vw), 24px);max-width:900px;margin:0 auto;text-wrap:balance}
 
 .column-center {
-  display: grid;
   justify-content: center;
   gap: 2em;
   align-content: center;
@@ -69,6 +75,89 @@ p {color:#cccccc;font-size: clamp(18px, calc(1.2rem + 0.45vw), 24px);max-width:8
 .linka:hover{text-decoration:underline;opacity:1!important}
 
 
+.contact-section {
+  width: 400px;
+  max-width: 86%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contact-title {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+  font-weight: 700;
+}
+
+.contact-description {
+  color: rgb(107 114 128);
+}
+
+.form-group-container {
+  display: grid;
+  gap: 1rem;
+  margin-top: 3vw;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-label {
+  margin-bottom: 0.5rem;
+}
+
+.form-input,
+.form-textarea {
+  padding: 0.8rem;
+  border: 1px solid rgba(255,255,255,0.1);
+  display: flex;
+  height: 2.5rem;
+  width: 100%;
+  border-radius: 0;
+  font-size: 0.8rem;
+  line-height: 1.25rem;
+  background:transparent;
+  color:#ccc;
+  border-radius:0.1em;
+  min-height:50px;
+}
+
+.form-input::placeholder,
+.form-textarea:focus-visible {
+  color: #6b7280;
+}
+
+.form-input:focus-visible,
+.form-textarea:focus-visible {
+  outline: 2px solid rgba(255,255,255,0.3);
+  outline-offset: 2px;
+}
+
+.form-textarea {
+  min-height: 100px;
+}
+
+.form-submit {
+  width: 100%;
+  margin-top: 1.2rem;
+  background-color: rgba(0,0,0,0.1);
+  color: #fff;
+  padding: 24px 24px;
+  border-radius: 0.375rem;
+  outline:none;
+  border:none;
+  color:#cccccc;
+  cursor:pointer!important;
+}
+
+.form-submit:hover {
+  background-color: rgba(0,0,0,0.15);
+  color:#FFF;
+  cursor:pointer!important;
+}
+
+
 </style>
 
 </head>
@@ -77,8 +166,35 @@ p {color:#cccccc;font-size: clamp(18px, calc(1.2rem + 0.45vw), 24px);max-width:8
 
 <div class="page-header">
     <h1>Nathan Copley</h1>
-    <p style="margin-bottom:30px;">Hi. I’m <b style="color:white">Nathan Copley</b>👋, a designer that bridges design and business 🤝 creating data‑driven design solutions that boost revenue and drives growth. 🚀 My work unites user‑centric design with strategic thinking 🤔 turning creative concepts into results that both stakeholders and users love. 🥰 </p>
-    <a class="linka" href="mailto:hi@nathancopley.uk"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAz0lEQVR4nO3U32nCUBiG8aB3hTqAELpCQXCGShG86QpdwRW6giv0xgunEApdQVIdoAXvWn4SOaVB8k+NxYs8cOAj7+F9yBdIFLVcDXjE2vl8YJQnSIOmSPIEexrYxJ7CAAvcnVDcx2sdQcoWU3RrFHfwjK9sQZlgjFWY3zEsKb/HMtzd4KlSEOYbvOAbP5ihl7mbl98e9hQKMs8GeAtRgkk46Sxkg6qe0sDfjj/rfKOjBb8gxjycOCrgZEFdWsFZK7r4z27UkCTBQ/W7tvwXOxHIwZ862fi3AAAAAElFTkSuQmCC" style="max-width:18px;margin-bottom:-3px;margin-right:6px;opacity:0.6">hi@nathancopley.uk</a>
+    <p style="margin-bottom:50px;">Hi. I’m <b style="color:white">Nathan Copley</b>👋, a designer that bridges design and business 🤝 creating data‑driven design solutions that boost revenue and drives growth. 🚀 My work unites user‑centric design with strategic thinking 🤔 turning creative concepts into results that both stakeholders and users love. 🥰 </p>
+
+ <div class="contact-section" style="margin-top:2vw;">
+    <form class="contact-form" action="https://api.web3forms.com/submit" method="POST">
+  
+      <input type="hidden" name="access_key" value="0a76eaa1-d380-4068-bc6f-f886aa7babfe" />
+      <input type="hidden" name="subject" value="New Contact Form Submission from Web3Forms - nathancopley.uk" />
+      <input type="hidden" name="from_name" value="nathancopley.uk" />
+  
+      <div class="form-group-container">
+        <div class="form-group">
+          <input id="name" name="name" class="form-input" placeholder="Your name" type="text" />
+        </div>
+
+        <div class="form-group">
+          <input id="email" name="email" class="form-input" placeholder="Your email" type="email" />
+        </div>
+
+        <div class="form-group">
+          <textarea class="form-textarea" id="message" name="message" placeholder="Your message"></textarea>
+        </div>
+      </div>
+      <button class="form-submit" type="submit">Send Message</button>
+    </form>
+  
+</div>
+    
+    </form>
+
     <a class="linka" style="opacity:0.6;font-size:9px!important" title="Nathan Copley Instagram" href="https://www.instagram.com/nathancopley/"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAADYklEQVR4nO2Zy04UQRSGe4GK4TouYauCcSGK7lTiTmIi+gSEiLyAF3QNsiUYlhJ8AS+JKxm87tS9gG4U3CoKiCv5TMlfsTKZ6a7u6Z4ek/mTSTrTVaf+03Xq3CoIGmggfwA9wDiwCCwBW6QHI8vILAI3gcNZKHASeEbtsQj0p6HAHmAW2JHgr8A94KJ2pyWVL7W7VotkDgFzWgutfRdoSiq4ADyXsJ/ABNCeFnGP9duBSWDb2Z3OJDthTemLMa3MGEdzOQZ8EpdXwN44k405GawCXZky9ePTBayJ00ycg70jczoe1AmAEzKz3+bZZ4I1qYmgzgDcEbdi1MAexzvV7GA761/QmTRmNFjmfQfwTRwPhQkywc5gLmvSFdZfc2LIaoUx83p/I0yQiaoGQ1kSrlKRy3q/ECZoRYMSpweKPyPAY2BZqceWnh/pXaHC3EEpY7zl+QjzXw4jsaFBbQkU2A/cBr57pB7rwC2gOcE6bZKxETboLxL6+XcO0afAqE1j9OvVfwvOuLdJ4hRRPJMoIiVW7XYDpz3mnHHMOHbQJW1FZE52J17EyYV0ll5q7ps4ZkYGipgzgeqIeAndP2XszoznoohI2IMdaU4hcgYcB1DIQ5ERe7Bj8I6KX8N5KGJigsGVGJwryboqWQ/yUMTadk8MzpVk9VqvF+SgyKaGt8bgXElWq2Rt/u+KmLLW4Ifn+IZphR320aBKAGN5HvaRyHTaE+qQ5OZ+CwpiBmdj8C6Vc04yjKzOmitSkqKs+EblMh/jQ2TFVwNFmpWKowTQWxngAPC6LpLGMmm8+boDgZ85faybNL5EGfNVLYryREcU7Fr1POYcbLsTmRRWG1WUus3qwlgHEIZ1XR3sy6rUXUmh+dBp3CjwUHXKpn5L+m84Se0St/mQazvIB047qHL5oO3OrUHnA+C+OF6r25ZpFLxbphpsvcpkUGcApiLNyhncr2uFba/2fY3A7nXHL10r9PlOMnd2qH3ZnTnLaD7dTl94Os7EJsfETJv/VKZMw7n0AZ+dQNuUJB5YZbZ1ydKRGePyB3tK5oRarcnij3ZmRnaJPIa5n7ikhkHVZa6zlkljehUn5h3vZNaeTnw9XbLIUeAJtUcxE4djfLepG7TNNv1IC0bWe3XyrwMHU1eggQaC2PgDcoKh50PBZGwAAAAASUVORK5CYII=" style="max-width:24px"></a>
 </div>
 
