@@ -17,6 +17,8 @@
 
 <style>
 
+    body{margin:20px;}
+
 html {filter:grayscale(1) contrast(1.2);background:black;box-sizing: border-box;    font-family: "Space Grotesk", sans-serif;
   font-optical-sizing: auto;
   font-weight: 500;
@@ -27,12 +29,12 @@ html {filter:grayscale(1) contrast(1.2);background:black;box-sizing: border-box;
   font-weight: 500;
   font-style: normal;}
 
-h1 {color:white;font-size: clamp(22px, calc(2.5rem + 2vw), 72px);margin:1.2vw;text-shadow: 0px 0px 70px hsl(0deg 0% 100% / 30%);}
+h1 {color:white;font-size: clamp(22px, calc(1.5rem + 3vw), 82px);margin:1.2vw;text-shadow: 0px 0px 70px hsl(0deg 0% 100% / 30%);}
 
 section {height: 100%; width: 100%;padding:2vh;}
 
 
-p {color:#cccccc;font-size: clamp(18px, calc(1.25rem + 0.45vw), 24px);max-width:900px;margin:0 auto;text-wrap:balance}
+p {color:#cccccc;font-size: clamp(16px, calc(0.85rem + 1vw), 24px);max-width:900px;margin:0 auto;text-wrap:balance}
 
 .column-center {
   justify-content: center;
@@ -95,7 +97,7 @@ p {color:#cccccc;font-size: clamp(18px, calc(1.25rem + 0.45vw), 24px);max-width:
 .form-group-container {
   display: grid;
   gap: 1rem;
-  margin-top: 3vw;
+  margin-top: 1vw;
 }
 
 .form-group {
@@ -110,9 +112,8 @@ p {color:#cccccc;font-size: clamp(18px, calc(1.25rem + 0.45vw), 24px);max-width:
 .form-input,
 .form-textarea {
   padding: 0.8rem;
-  border: 1px solid rgba(255,255,255,0.1);
+  border: 1px solid rgba(255,255,255,0.05);
   display: flex;
-  height: 2.5rem;
   width: 100%;
   border-radius: 0;
   font-size: 0.8rem;
@@ -140,7 +141,7 @@ p {color:#cccccc;font-size: clamp(18px, calc(1.25rem + 0.45vw), 24px);max-width:
 
 .form-submit {
   width: 100%;
-  margin-top: 1.2rem;
+  margin-top: 1rem;
   background-color: rgba(0,0,0,0.1);
   color: #fff;
   padding: 24px 24px;
@@ -166,9 +167,9 @@ p {color:#cccccc;font-size: clamp(18px, calc(1.25rem + 0.45vw), 24px);max-width:
 
 <div class="page-header">
     <h1>Nathan Copley</h1>
-    <p style="margin-bottom:50px;">Hi. I’m <b style="color:white">Nathan Copley</b>👋, a designer that bridges design and business 🤝 creating data‑driven design solutions that boost revenue and drives growth. 🚀 My work unites user‑centric design with strategic thinking 🤔 turning creative concepts into results that both stakeholders and users love. 🥰 </p>
+    <p style="margin-bottom:2vw;">Hi. I’m <b style="color:white">Nathan Copley</b>👋, a designer that bridges design and business 🤝 creating data‑driven design solutions that boost revenue and drives growth. 🚀 My work unites user‑centric design with strategic thinking 🤔 turning creative concepts into results that both stakeholders and users love. 🥰 </p>
 
- <div class="contact-section" style="margin-top:2vw;">
+ <div class="contact-section" style="margin-top:3vh;">
     <form class="contact-form" action="https://api.web3forms.com/submit" method="POST">
   
       <input type="hidden" name="access_key" value="0a76eaa1-d380-4068-bc6f-f886aa7babfe" />
