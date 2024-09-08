@@ -1,29 +1,31 @@
 
 <html lang="en" class="no-js">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Hi. I’m Nathan Copley, a designer that bridges design and business, creating data‑driven design solutions that boost revenue and drives growth. My work unites user‑centric design with strategic thinking, turning creative concepts into results that both stakeholders and users love.">
 <meta charset="UTF-8">
 <meta property="og:title" content="Nathan Copley">
 <meta property="og:locale" content="en_GB">
 <meta property="og:type" content="website">
-<meta name="theme-color" content="#111111">
+<meta name="theme-color" content="000000">
 <meta property="og:url" content="https://nathancopley.uk/">
 <link rel="canonical" href="https://nathancopley.uk/">
+<link rel="icon" type="image/x-icon" href="https://raw.githubusercontent.com/NathanCopley/nathancopley.github.io/gh-pages/favicon.png">
 <title>Nathan Copley</title>
 
 <style>
 
-html {background:#111111;box-sizing: border-box;  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;}
+html {filter:grayscale(1) contrast(1.2);background:black;box-sizing: border-box;  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;text-align: center;}
 
 *, *:before, *:after {box-sizing: inherit;}
 
-h1 {color:white;font-size:1.8em;margin:0.5em 0 1em 0}
+h1 {color:white;font-size: clamp(28px, calc(2.5rem + 0.45vw), 52px);margin:0.5em 0 1em 0;text-shadow: 0px 0px 70px hsl(0deg 0% 100% / 30%);}
 
 section {height: 100%; width: 100%;}
 
-  div {max-width:35em;margin:1em;padding:2em; opacity:1;}
+  div {margin:1vh;padding:1vh; opacity:1;}
 
 
-p {color:#cccccc;font-size:1em;line-height:1.4em;}
+p {color:#cccccc;font-size: clamp(18px, calc(1.2rem + 0.45vw), 24px);max-width:840px;margin:0 auto;text-wrap:balance}
 
 .column-center {
   display: grid;
@@ -33,15 +35,51 @@ p {color:#cccccc;font-size:1em;line-height:1.4em;}
   grid-auto-flow: column;
 }
 
+
+.page-header {}
+
+.page-header:before {
+  animation: grain 8s steps(10) infinite;
+  background-image: url("https://raw.githubusercontent.com/NathanCopley/nathancopley.github.io/gh-pages/grain.webp");
+  content: "";
+  height: 300%;
+  left: -50%;
+  opacity: 0.15;
+  position: fixed;
+  top: -110%;
+  width: 300%;
+  z-index:-1;
+}
+
+@keyframes grain {
+  0%, 100% { transform:translate(0, 0) }
+  10% { transform:translate(-5%, -10%) }
+  20% { transform:translate(-15%, 5%) }
+  30% { transform:translate(7%, -25%) }
+  40% { transform:translate(-5%, 25%) }
+  50% { transform:translate(-15%, 10%) }
+  60% { transform:translate(15%, 0%) }
+  70% { transform:translate(0%, 15%) }
+  80% { transform:translate(3%, 35%) }
+  90% { transform:translate(-10%, 10%) }
+}
+
+
+.linka{font-size: clamp(14px, calc(0.75rem + 0.25vw), 16px);padding:1em;color:white;display:block;margin:0 auto;text-decoration:none}
+.linka:hover{text-decoration:underline;opacity:1!important}
+
+
 </style>
 
 </head>
 
 <section class="column-center">
 
-<div>
+<div class="page-header">
     <h1>Nathan Copley</h1>
-    <p style="font-style:italic">New portfolio coming soon™.</p>
+    <p style="margin-bottom:30px;">Hi. I’m <b style="color:white">Nathan Copley</b>👋, a designer that bridges design and business 🤝 creating data‑driven design solutions that boost revenue and drives growth. 🚀 My work unites user‑centric design with strategic thinking 🤔 turning creative concepts into results that both stakeholders and users love. 🥰 </p>
+    <a class="linka" href="mailto:hi@nathancopley.uk"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAz0lEQVR4nO3U32nCUBiG8aB3hTqAELpCQXCGShG86QpdwRW6giv0xgunEApdQVIdoAXvWn4SOaVB8k+NxYs8cOAj7+F9yBdIFLVcDXjE2vl8YJQnSIOmSPIEexrYxJ7CAAvcnVDcx2sdQcoWU3RrFHfwjK9sQZlgjFWY3zEsKb/HMtzd4KlSEOYbvOAbP5ihl7mbl98e9hQKMs8GeAtRgkk46Sxkg6qe0sDfjj/rfKOjBb8gxjycOCrgZEFdWsFZK7r4z27UkCTBQ/W7tvwXOxHIwZ862fi3AAAAAElFTkSuQmCC" style="max-width:18px;margin-bottom:-3px;margin-right:6px;opacity:0.6">hi@nathancopley.uk</a>
+    <a class="linka" style="opacity:0.6;font-size:9px!important" title="Nathan Copley Instagram" href="https://www.instagram.com/nathancopley/"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAADYklEQVR4nO2Zy04UQRSGe4GK4TouYauCcSGK7lTiTmIi+gSEiLyAF3QNsiUYlhJ8AS+JKxm87tS9gG4U3CoKiCv5TMlfsTKZ6a7u6Z4ek/mTSTrTVaf+03Xq3CoIGmggfwA9wDiwCCwBW6QHI8vILAI3gcNZKHASeEbtsQj0p6HAHmAW2JHgr8A94KJ2pyWVL7W7VotkDgFzWgutfRdoSiq4ADyXsJ/ABNCeFnGP9duBSWDb2Z3OJDthTemLMa3MGEdzOQZ8EpdXwN44k405GawCXZky9ePTBayJ00ycg70jczoe1AmAEzKz3+bZZ4I1qYmgzgDcEbdi1MAexzvV7GA761/QmTRmNFjmfQfwTRwPhQkywc5gLmvSFdZfc2LIaoUx83p/I0yQiaoGQ1kSrlKRy3q/ECZoRYMSpweKPyPAY2BZqceWnh/pXaHC3EEpY7zl+QjzXw4jsaFBbQkU2A/cBr57pB7rwC2gOcE6bZKxETboLxL6+XcO0afAqE1j9OvVfwvOuLdJ4hRRPJMoIiVW7XYDpz3mnHHMOHbQJW1FZE52J17EyYV0ll5q7ps4ZkYGipgzgeqIeAndP2XszoznoohI2IMdaU4hcgYcB1DIQ5ERe7Bj8I6KX8N5KGJigsGVGJwryboqWQ/yUMTadk8MzpVk9VqvF+SgyKaGt8bgXElWq2Rt/u+KmLLW4Ifn+IZphR320aBKAGN5HvaRyHTaE+qQ5OZ+CwpiBmdj8C6Vc04yjKzOmitSkqKs+EblMh/jQ2TFVwNFmpWKowTQWxngAPC6LpLGMmm8+boDgZ85faybNL5EGfNVLYryREcU7Fr1POYcbLsTmRRWG1WUus3qwlgHEIZ1XR3sy6rUXUmh+dBp3CjwUHXKpn5L+m84Se0St/mQazvIB047qHL5oO3OrUHnA+C+OF6r25ZpFLxbphpsvcpkUGcApiLNyhncr2uFba/2fY3A7nXHL10r9PlOMnd2qH3ZnTnLaD7dTl94Os7EJsfETJv/VKZMw7n0AZ+dQNuUJB5YZbZ1ydKRGePyB3tK5oRarcnij3ZmRnaJPIa5n7ikhkHVZa6zlkljehUn5h3vZNaeTnw9XbLIUeAJtUcxE4djfLepG7TNNv1IC0bWe3XyrwMHU1eggQaC2PgDcoKh50PBZGwAAAAASUVORK5CYII=" style="max-width:24px"></a>
 </div>
 
 </section>
