@@ -1,7 +1,7 @@
 
 <html lang="en" class="no-js">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Hi. I’m Nathan Copley, a designer that bridges design and business, creating data‑driven design solutions that boost revenue and drives growth. My work unites user‑centric design with strategic thinking, turning creative concepts into results that both stakeholders and users love.">
+<meta name="description" content="Hi. I’m Nathan Copley, an eCommerce Specialist that bridges design and business, creating data‑driven design solutions that boost revenue and drives growth. My work unites user‑centric design with strategic thinking, turning creative concepts into results that both stakeholders and users love.">
 <meta charset="UTF-8">
 <meta property="og:title" content="Nathan Copley">
 <meta property="og:locale" content="en_GB">
@@ -10,31 +10,35 @@
 <meta property="og:url" content="https://nathancopley.uk/">
 <link rel="canonical" href="https://nathancopley.uk/">
 <link rel="icon" type="image/x-icon" href="https://raw.githubusercontent.com/NathanCopley/nathancopley.github.io/gh-pages/favicon.png">
-<title>Nathan Copley</title>
+<title>Nathan Copley | eCommerce Specialist</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Zalando+Sans+Expanded:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
 
 <style>
 
-    body{margin:20px;}
+    body{margin:0;line-height:1.4;text-wrap:balance;color:white}
 
-html {filter:grayscale(1) contrast(1.2);background:black;box-sizing: border-box;    font-family: "Space Grotesk", sans-serif;
+html {background:#1d1d1d;box-sizing: border-box;    font-family: "Zalando Sans Expanded", sans-serif;
   font-optical-sizing: auto;
   font-weight: 500;
   font-style: normal;text-align: center;}
 
-*, *:before, *:after {box-sizing: inherit;transition:0.2s;  font-family: "Space Grotesk", sans-serif;
+*, *:before, *:after {box-sizing: inherit;transition:0.2s;  font-family: "Zalando Sans Expanded", sans-serif;
   font-optical-sizing: auto;
   font-weight: 500;
-  font-style: normal;}
+  font-style: normal;
+text-wrap:balance}
 
-h1 {color:white;font-size: clamp(22px, calc(1.5rem + 3vw), 82px);margin:1.2vw;text-shadow: 0px 0px 70px hsl(0deg 0% 100% / 30%);}
+  h1,h2{line-height:1;font-weight:900;text-transform:uppercase}
+h1 {color:white;font-size: clamp(32px, calc(3rem + 2vw), 74px);margin:0.3rem;padding-top:0.3rem;text-shadow: 0px 0px 70px hsl(0deg 0% 100% / 30%);}
+h2 {color:#8fff00;font-size: clamp(12px, calc(0.75rem + 2vw), 16px);margin:0.3rem;text-shadow: 0px 0px 70px hsla(86, 100%, 50%, 0.3);letter-spacing:0.3rem}
 
-section {height: 100%; width: 100%;padding:2vh;}
+section {height: 100%; width: 100%;padding:calc(10px + 1vh)}
 
-
-p {color:#cccccc;font-size: clamp(16px, calc(0.85rem + 1vw), 24px);max-width:900px;margin:0 auto;text-wrap:balance}
+a:hover{text-decoration:underline!important}
+b {font-weight:900}
+p {color:#cccccc;font-size: clamp(14px, calc(0.75rem + 2vw), 28px);max-width:900px;margin:0 auto;text-wrap:balance}
 
 .column-center {
   justify-content: center;
@@ -48,16 +52,17 @@ p {color:#cccccc;font-size: clamp(16px, calc(0.85rem + 1vw), 24px);max-width:900
 
 .page-header:before {
   animation: grain 8s steps(10) infinite;
-  background-image: url("https://raw.githubusercontent.com/NathanCopley/nathancopley.github.io/gh-pages/grain.webp");
+  background-image: url("https://raw.githubusercontent.com/NathanCopley/nathancopley.github.io/gh-pages/grain.gif");
   content: "";
   height: 300%;
   left: -50%;
-  opacity: 0.15;
+  opacity: 0.5;
   position: fixed;
   top: -110%;
   width: 300%;
   z-index:-1;
 }
+
 
 @keyframes grain {
   0%, 100% { transform:translate(0, 0) }
@@ -77,86 +82,49 @@ p {color:#cccccc;font-size: clamp(16px, calc(0.85rem + 1vw), 24px);max-width:900
 .linka:hover{text-decoration:underline;opacity:1!important}
 
 
-.contact-section {
-  width: 400px;
-  max-width: 86%;
-  margin-left: auto;
-  margin-right: auto;
-}
+  .skills-wrap {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding-bottom:20px;
+  }
 
-.contact-title {
-  font-size: 1.875rem;
-  line-height: 2.25rem;
-  font-weight: 700;
-}
+  @media (min-width: 900px) {
+    .skills { gap: clamp(.5rem, 0.6vw, 1rem); }
+  }
 
-.contact-description {
-  color: rgb(107 114 128);
-}
+  .skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--gap);
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+  }
+ .pill {
+    -webkit-tap-highlight-color: transparent;
+    display: inline-flex;
+    align-items: center;
+    gap: .5rem;
+    margin:0.5rem;
+    padding: 0.5rem 1rem;
+    font-size: clamp(12px, calc(0.75rem + 0.25vw), 16px);
+    border-radius: 999px;
+    background: transparent;
+    color: white;
+    border: 2px solid rgba(255,255,255,0.6);
+    box-shadow: var(--pill-shadow);
+    cursor: default;
+  }
 
-.form-group-container {
-  display: grid;
-  gap: 1rem;
-  margin-top: 1vw;
-}
 
-.form-group {
-  display: flex;
-  flex-direction: column;
-}
 
-.form-label {
-  margin-bottom: 0.5rem;
-}
-
-.form-input,
-.form-textarea {
-  padding: 0.8rem;
-  border: 1px solid rgba(255,255,255,0.05);
-  display: flex;
-  width: 100%;
-  border-radius: 0;
-  font-size: 0.8rem;
-  line-height: 1.25rem;
-  background:transparent;
-  color:#ccc;
-  border-radius:0.1em;
-  min-height:50px;
-}
-
-.form-input::placeholder,
-.form-textarea:focus-visible {
-  color: #6b7280;
-}
-
-.form-input:focus-visible,
-.form-textarea:focus-visible {
-  outline: 2px solid rgba(255,255,255,0.3);
-  outline-offset: 2px;
-}
-
-.form-textarea {
-  min-height: 100px;
-}
-
-.form-submit {
-  width: 100%;
-  margin-top: 1rem;
-  background-color: rgba(0,0,0,0.1);
-  color: #fff;
-  padding: 24px 24px;
-  border-radius: 0.375rem;
-  outline:none;
-  border:none;
-  color:#cccccc;
-  cursor:pointer!important;
-}
-
-.form-submit:hover {
-  background-color: rgba(0,0,0,0.15);
-  color:#FFF;
-  cursor:pointer!important;
-}
+    @keyframes sweep-up {
+      0% { top: 100%; }
+      50% { top: 0; }
+      100% { top: -100%; }
+    }
 
 
 </style>
@@ -166,37 +134,26 @@ p {color:#cccccc;font-size: clamp(16px, calc(0.85rem + 1vw), 24px);max-width:900
 <section class="column-center">
 
 <div class="page-header">
+  <img src="https://raw.githubusercontent.com/NathanCopley/nathancopley.github.io/gh-pages/nathan-copley_logo.png" style="width:140px;padding-bottom:20px">
+  <h2>Growth by Design</h2>
     <h1>Nathan Copley</h1>
-    <p style="margin-bottom:2vw;">Hi. I’m <b style="color:white">Nathan Copley</b>👋, a designer that bridges design and business 🤝 creating data‑driven design solutions that boost revenue and drives growth. 🚀 My work unites user‑centric design with strategic thinking 🤔 turning creative concepts into results that both stakeholders and users love. 🥰 </p>
+    <p style="margin:0.1rem auto;padding: 1rem 0rem 1.25rem 0rem">👋 I'm an <b style="color:#8fff00">eCommerce Specialist</b> that bridges design and business 🤝 creating data‑driven design solutions that <b style="color:white">boost revenue and drives growth.</b> 🚀 My work unites user‑centric design with strategic thinking 🤔 turning creative concepts into <b style="color:white">results</b> that both stakeholders and users love. 🥰 </p>
 
- <div class="contact-section" style="margin-top:3vh;">
-    <form class="contact-form" action="https://api.web3forms.com/submit" method="POST">
-  
-      <input type="hidden" name="access_key" value="0a76eaa1-d380-4068-bc6f-f886aa7babfe" />
-      <input type="hidden" name="subject" value="New Contact Form Submission from Web3Forms - nathancopley.uk" />
-      <input type="hidden" name="from_name" value="nathancopley.uk" />
-  
-      <div class="form-group-container">
-        <div class="form-group">
-          <input id="name" name="name" class="form-input" placeholder="Your name" type="text" />
-        </div>
 
-        <div class="form-group">
-          <input id="email" name="email" class="form-input" placeholder="Your email" type="email" />
-        </div>
-
-        <div class="form-group">
-          <textarea class="form-textarea" id="message" name="message" placeholder="Your message"></textarea>
-        </div>
-      </div>
-      <button class="form-submit" type="submit">Send Message</button>
-    </form>
-  
-</div>
     
-    </form>
+  <div class="skills-wrap">
+    <ul class="skills" role="list" aria-label="List of skills">
+      <li class="pill">eCommerce</li>
+      <li class="pill">Shopify Specialist</li>
+      <li class="pill">Conversion Rate Optimisation</li>
+      <li class="pill">UI Design</li>
+      <li class="pill">Customer Experience</li>
+      <li class="pill">Retention</li>
+      <li class="pill">Acquisition</li>
+    </ul>
+  </div>
 
-    <a class="linka" style="opacity:0.6;font-size:9px!important" title="Nathan Copley Instagram" href="https://www.instagram.com/nathancopley/"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAADYklEQVR4nO2Zy04UQRSGe4GK4TouYauCcSGK7lTiTmIi+gSEiLyAF3QNsiUYlhJ8AS+JKxm87tS9gG4U3CoKiCv5TMlfsTKZ6a7u6Z4ek/mTSTrTVaf+03Xq3CoIGmggfwA9wDiwCCwBW6QHI8vILAI3gcNZKHASeEbtsQj0p6HAHmAW2JHgr8A94KJ2pyWVL7W7VotkDgFzWgutfRdoSiq4ADyXsJ/ABNCeFnGP9duBSWDb2Z3OJDthTemLMa3MGEdzOQZ8EpdXwN44k405GawCXZky9ePTBayJ00ycg70jczoe1AmAEzKz3+bZZ4I1qYmgzgDcEbdi1MAexzvV7GA761/QmTRmNFjmfQfwTRwPhQkywc5gLmvSFdZfc2LIaoUx83p/I0yQiaoGQ1kSrlKRy3q/ECZoRYMSpweKPyPAY2BZqceWnh/pXaHC3EEpY7zl+QjzXw4jsaFBbQkU2A/cBr57pB7rwC2gOcE6bZKxETboLxL6+XcO0afAqE1j9OvVfwvOuLdJ4hRRPJMoIiVW7XYDpz3mnHHMOHbQJW1FZE52J17EyYV0ll5q7ps4ZkYGipgzgeqIeAndP2XszoznoohI2IMdaU4hcgYcB1DIQ5ERe7Bj8I6KX8N5KGJigsGVGJwryboqWQ/yUMTadk8MzpVk9VqvF+SgyKaGt8bgXElWq2Rt/u+KmLLW4Ifn+IZphR320aBKAGN5HvaRyHTaE+qQ5OZ+CwpiBmdj8C6Vc04yjKzOmitSkqKs+EblMh/jQ2TFVwNFmpWKowTQWxngAPC6LpLGMmm8+boDgZ85faybNL5EGfNVLYryREcU7Fr1POYcbLsTmRRWG1WUus3qwlgHEIZ1XR3sy6rUXUmh+dBp3CjwUHXKpn5L+m84Se0St/mQazvIB047qHL5oO3OrUHnA+C+OF6r25ZpFLxbphpsvcpkUGcApiLNyhncr2uFba/2fY3A7nXHL10r9PlOMnd2qH3ZnTnLaD7dTl94Os7EJsfETJv/VKZMw7n0AZ+dQNuUJB5YZbZ1ydKRGePyB3tK5oRarcnij3ZmRnaJPIa5n7ikhkHVZa6zlkljehUn5h3vZNaeTnw9XbLIUeAJtUcxE4djfLepG7TNNv1IC0bWe3XyrwMHU1eggQaC2PgDcoKh50PBZGwAAAAASUVORK5CYII=" style="max-width:24px"></a>
+        Let's turn the <i style="font-style:italic">noise</i> into <b>action</b>:<br> <a title="Email Nathan Copley" href="mailto:nathancopley.uk@gmail.com" style="color:#8fff00;text-shadow: 0px 0px 70px hsla(86, 100%, 50%, 0.3);font-weight:900;text-decoration:none">nathancopley.uk@gmail.com</a>
 </div>
 
 </section>
